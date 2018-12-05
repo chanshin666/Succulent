@@ -1,0 +1,232 @@
+
+body {
+    margin-top: 88px;
+}
+
+/*主体*/
+#bodyer {
+    min-width: 1000px;
+    min-height: 579px;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #FFF;
+    border-right: 1px solid #C7CEB2;
+}
+
+    #bodyer a:link {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    #bodyer a:hover {
+        color: #199475;
+        text-decoration: none;
+    }
+
+#bodyer-left {
+    width: 750px;
+    min-height: 579px;
+    float: left;
+}
+
+#LeftBox {
+    width: 750px;
+    height: 50px;
+    position: fixed;
+    top: 38px;
+    z-index: 5555;
+}
+
+#A3-btn {
+    background-color: #199475;
+    color: #FFF;
+}
+
+#A4-Style {
+    width: 750px;
+    height: 50px;
+    background-color: #C7CEB2;
+}
+
+    #A4-Style p {
+        color: #199475;
+    }
+
+#bodyer-A5 {
+    width: 750px;
+}
+
+#A5-bottom {
+    width: 750px;
+    height: 25px;
+    background-color: #C7CEB2;
+}
+
+.A5-list {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #C7CEB2;
+    border-right: 1px solid #C7CEB2;
+    border-left: 1px solid #C7CEB2;
+    background-color: #FFF;
+}
+
+.list-A {
+    width: 50px;
+    height: 49px;
+    float: left;
+    margin-left: 15px;
+}
+
+.list-A-Img {
+    width: 43px;
+    height: 43px;
+    margin-top: 3px;
+    margin-left: 3px;
+    border:1px solid #C7CEB2;
+    background-color:#FFF;
+}
+.ImgImg {
+    width:37px;
+    height:37px;
+    margin:2px;
+    background-image: url('../../images/Tribune/web/defaultPhoto.jpg');
+    background-size: contain;
+}
+
+.list-B {
+    width: 425px;
+    height: 49px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.list-C {
+    width: 75px;
+    height: 49px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+
+.list-D {
+    width: 75px;
+    height: 49px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+
+.list-E {
+    width: 75px;
+    height: 49px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+
+#bodyer-A6 {
+    width: 750px;
+    margin-top: 7px;
+}
+
+#A6-Style {
+    width: 750px;
+}
+
+#bodyer-right {
+    width: 249px;
+    min-height: 579px;
+    float: right;
+}
+
+#RightBox {
+    width: 249px;
+    height: auto;
+    background-color: #FFF;
+    position: fixed;
+    top: 38px;
+    z-index: 5555;
+}
+
+#RB-01 {
+    width: 250px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border-right: 1px solid #C7CEB2;
+    border-bottom: 1px solid #C7CEB2;
+}
+
+#RB-02 {
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+#RB-03 {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+#RB-04 {
+    width: 100%;
+    height: auto;
+}
+
+#A4-PhotoBox {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border: 1px solid #C7CEB2;
+}
+
+#A4-UserPhoto {
+    width: 108px;
+    height: 108px;
+    background-image: url('../../images/Tribune/web/defaultPhoto.jpg');
+    background-size: contain;
+}
+
+#A4-NameBox {
+    width: 120px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1px;
+}
+
+#A4-LevelBox {
+    width: 120px;
+    height: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 12px;
+    border: 1px solid #C7CEB2;
+}
+
+#A4-LoginInfo {
+    width: 120px;
+    height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 12px;
+}
+/*主体结束*/

@@ -1,0 +1,98 @@
+﻿
+@model SucculentWeb.ViewModels.TribuneVM.TribuneCreateVM
+@using BLL;
+@using Model;
+@{
+    ViewBag.Title = "CreatePost";
+    Layout = "~/Views/Shared/Tribune/TribuneView.cshtml";
+}
+@section Head
+{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/ueditor/ueditor.config.js"></script>
+    <script src="~/ueditor/ueditor.all.js"></script>
+    <link href="~/css/Tribune/TribuneCreatePost.css" rel="stylesheet" />
+}
+<script type="text/javascript">
+    var editorOption = {
+        initialFrameWidth: 1000,
+        autoHeightEnabled: true,
+        maximumWords: 1000,
+        initialFrameHeight: 270,
+        toolbars: [['source', 'undo', 'redo', 'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'date', 'time', 'link', 'unlink', 'fontfamily', 'fontsize', 'forecolor', 'simpleupload', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'inserttable', 'help', 'justifyleft', 'justifyright', 'justifycenter', 'justifyjustify', ]]
+    };
+    var editor = new baidu.editor.ui.Editor(editorOption);
+    editor.render('Posts_PostContent');
+</script>
+
+<!-- 主体 -->
+<!-- 顶部 -->
+<section id="top">
+    <div id="topA">
+        <div id="topA-logo"><img src="~/images/Tribune/web/testlogo.png" /></div>
+        <div id="topA-right">
+            <div class="topA-box"></div>
+            <div class="topA-box"></div>
+            <div class="topA-box"></div>
+            <div class="topA-box">
+                <input type="button" class="btn btn-block btn-warning" onClick="location.href='@Url.Action("BoardIndex", "Tribune", new { BoardID = int.Parse(Session["BoardID"].ToString()) })'" value="返回">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 顶部结束 -->
+<section id="bodyer">
+    <div id="bodyer">
+        @using (Html.BeginForm("CreatePost", "Tribune", FormMethod.Post, new { id = "CreateForm", enctype = "multipart/form-data" }))
+            {
+            <div id="A1">
+                <div id="A1-left">
+                    @Html.EditorFor(Model => Model.Posts.PostTitle, new { htmlAttributes = new { @class = "form-control", placeholder = " 帖子标题   不能超过二十四个字" } })
+                </div>
+                <div id="A1-right">
+                    <select class="form-control text-center" id="selectdetailtype" name="selectdetailtype">
+                        @{ PostsManager userM = new PostsManager(); }
+                        @{ Users users = userM.GetUserFlag(Convert.ToInt32(Session["UserID"])); }
+                        @if (users.UserFlag != 0)
+                        {
+                            foreach (var B in Model.Sections06)
+                            {
+                                <option>@B.SectionName</option>
+                            }
+                            foreach (var c in Model.Sections33)
+                            {
+                                <option>@c.SectionName</option>
+                            }
+                        }
+                        else
+                        {
+                            foreach (var B in Model.Sections06)
+                            {
+                                <option>@B.SectionName</option>
+                            }
+                            foreach (var A in Model.Sections03)
+                            {
+                                <option>@A.SectionName</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div id="A1Message">
+                @Html.ValidationMessageFor(Model => Model.Posts.PostTitle, "", new { style = "color:red;" })
+            </div>
+                <div id="A2" class="text">
+                    @Html.TextAreaFor(Model => Model.Posts.PostContent)
+                </div>
+                <div id="A2Message">
+                    @Html.ValidationMessageFor(Model => Model.Posts.PostContent, "", new { style = "color:red;" })
+                </div>
+                <div id="A3" class="text">
+                    <input type="submit" value="发 帖" class="btn btn-block btn-success" />
+                </div>
+                            }
+    </div>
+</section>
+<!-- 主体结束 -->
