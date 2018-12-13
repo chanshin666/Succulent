@@ -1029,9 +1029,6 @@
     <Content Include="ueditor\lang\zh-cn\images\music.png" />
     <Content Include="ueditor\lang\zh-cn\images\upload.png" />
     <Content Include="ueditor\lang\zh-cn\zh-cn.js" />
-    <Content Include="ueditor\net\Bin\Newtonsoft.Json.dll" />
-    <Content Include="ueditor\net\Bin\Newtonsoft.Json.pdb" />
-    <Content Include="ueditor\net\Bin\Newtonsoft.Json.xml" />
     <Content Include="ueditor\net\net.sln" />
     <Content Include="ueditor\net\upload\image\20170425\6362871574934295828768335.jpg" />
     <Content Include="ueditor\net\upload\image\20170425\6362871574989057505195574.jpg" />
@@ -1439,9 +1436,6 @@
     <Content Include="Views\ShopMall\ShopMallIndex.cshtml" />
     <Content Include="Views\Goods\CreatGoods.cshtml" />
     <Content Include="Views\Succulent\Create.cshtml" />
-    <Content Include="Views\Succulent\Succulent.cshtml" />
-    <Content Include="Views\TribuneIndex\Index.cshtml" />
-    <Content Include="Views\TribuneBoard\Index.cshtml" />
     <Content Include="Views\MallSearch\Index.cshtml" />
     <Content Include="Views\MallSearch\Tuijian.cshtml" />
     <Content Include="Views\ShopMall\ShopMallClass.cshtml" />
@@ -1449,8 +1443,6 @@
     <Content Include="Views\ShopMall\ShopMallShops.cshtml" />
     <Content Include="Views\ShopMall\ShopMallClassContent.cshtml" />
     <Content Include="Views\ShopMall\ShopMallShopsContent.cshtml" />
-    <Content Include="Views\ShopMall\ShopMallShopsCount.cshtml" />
-    <Content Include="Views\ShopMall\ShopMallShopsImage.cshtml" />
     <Content Include="Views\Goods\ShopTopImage.cshtml" />
     <Content Include="Views\Goods\GoodsDetail.cshtml" />
     <Content Include="Views\Goods\GoodsDetailShop.cshtml" />
